@@ -22,6 +22,9 @@ cd ..
 cp config_template config
 # edit your config to contain you api credentials and preferences
 # settings.test determines whether actual trades will be made, default test=True
+# in test mode any transfers and transactions are printed to the console only
 
 python cpm.py
 ```
+
+We have no way to track transactions since they have to be cleared on the exchange before we can get any info about them, so the prices/stats that you want will have to be collected and attributed after-the-fact
