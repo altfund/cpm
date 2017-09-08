@@ -27,4 +27,6 @@ cp config_template config
 python cpm.py
 ```
 
+In config, percentages are defined as decimals. So 100% is 1, 50% is 0.5, 10% is .1, etc. The leading 0 is optional.
+
 We have no way to track transactions since they have to be cleared on the exchange before we can get any info about them, so the prices/stats that you want will have to be collected and attributed after-the-fact
