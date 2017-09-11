@@ -211,6 +211,8 @@ for exchange in exchanges:
     final_wallets[exchange] = {}
     for currency in wallets[exchange]:
         print(currency)
+        print(wallets[exchange])
+        print(wallets[exchange][currency])
         if (wallets[exchange][currency]['fx_rate'] is not None) and (currency not in allocated_currencies):
             final_wallets[exchange][currency] = wallets[exchange][currency]
             final_wallets[exchange][currency]['optimal_balance'] = portfolio[currency]['optimal_balance']
