@@ -23,7 +23,7 @@
 #Rebalance = true / false
 #If Rebalance is false the script buys always the percentage of the investment budget. If rebalance is true than the script buys in a manner that the percentage inside of the configuration is the percentage of the overall value in base currency. The script may not do any sell orders in order to perform the rebalancing. Only the buy volume may be altered. 
 
-import bitfinex
+import bitfinex-1 as bitfinex
 from bittrex.bittrex import Bittrex
 import krakenex
 
