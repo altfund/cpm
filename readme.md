@@ -29,4 +29,7 @@ python cpm.py
 
 In config, percentages are defined as decimals. So 100% is 1, 50% is 0.5, 10% is .1, etc. The leading 0 is optional.
 
+You must setup your transfer accounts in Kraken manually ahead of time (transfer via your `transfer_currency` in config), and indicate the name you chose for each account in KRAKEN config as `bittrex_transfer_name`
+and `bitfinex_transfer_name`.
+
 We have no way to track transactions since they have to be cleared on the exchange before we can get any info about them, so the prices/stats that you want will have to be collected and attributed after-the-fact
